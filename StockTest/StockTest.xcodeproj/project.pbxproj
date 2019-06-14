@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C352EACB22B36C2300FDBD9F /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352EACA22B36C2300FDBD9F /* StockView.swift */; };
 		C395160822AD38CC0029757F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395160722AD38CC0029757F /* AppDelegate.swift */; };
 		C395160A22AD38CC0029757F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395160922AD38CC0029757F /* ViewController.swift */; };
 		C395160D22AD38CC0029757F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C395160B22AD38CC0029757F /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C352EACA22B36C2300FDBD9F /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
 		C395160422AD38CC0029757F /* StockTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C395160722AD38CC0029757F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C395160922AD38CC0029757F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				C395160B22AD38CC0029757F /* Main.storyboard */,
+				C352EACA22B36C2300FDBD9F /* StockView.swift */,
 				C395161022AD38CE0029757F /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -185,6 +188,7 @@
 			files = (
 				C395160A22AD38CC0029757F /* ViewController.swift in Sources */,
 				C395162622ADF6810029757F /* DataManager.swift in Sources */,
+				C352EACB22B36C2300FDBD9F /* StockView.swift in Sources */,
 				C395161C22AD49030029757F /* DataModel.swift in Sources */,
 				C395162122AD537A0029757F /* UIScreen+EX.swift in Sources */,
 				C395162822AE1D2C0029757F /* UIBezierPath+EX.swift in Sources */,
