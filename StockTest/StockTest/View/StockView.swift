@@ -32,7 +32,7 @@ class StockView: UIView {
         addYLabel(content)
     }
     
-    func createShapeLayer() -> CAShapeLayer {
+    private func createShapeLayer() -> CAShapeLayer {
         let shapeLayer = CAShapeLayer()
         shapeLayer.frame = self.frame
         shapeLayer.fillColor = UIColor(red: 1, green: 0, blue: 0, alpha: 0.5).cgColor
@@ -42,13 +42,13 @@ class StockView: UIView {
         return shapeLayer
     }
     
-    func addShapeLayer(_ shapeLayer: CAShapeLayer, path: UIBezierPath, view: UIView) {
+    private func addShapeLayer(_ shapeLayer: CAShapeLayer, path: UIBezierPath, view: UIView) {
         shapeLayer.path = path.cgPath
         shapeLayer.position = view.center
         view.layer.addSublayer(shapeLayer)
     }
     
-    func addXLabel() {
+    private func addXLabel() {
         
         for index in 0...4 {
             let label = UILabel(frame: CGRect(x: Double(index) * canvasWidth * 2 / 9, y: canvasHeight + 30, width: 40, height: 22))
@@ -66,7 +66,7 @@ class StockView: UIView {
         
     }
     
-    func addYLabel(_ content: ContentDouble?) {
+    private func addYLabel(_ content: ContentDouble?) {
         
         for index in 0...2 {
             let label = UILabel(frame: CGRect(x: -15, y: canvasHeight * Double(index) / 2 - Double(index) * 11 + 30, width: 45, height: 22))
@@ -90,7 +90,7 @@ class StockView: UIView {
         
     }
     
-    func getAllPoint(_ content: ContentDouble?) {
+    private func getAllPoint(_ content: ContentDouble?) {
         let shapeLayer = createShapeLayer()
         let path = UIBezierPath()
         
@@ -112,7 +112,7 @@ class StockView: UIView {
         
     }
     
-    func getGrid() {
+    private func getGrid() {
         
         // add Y Grid
         for index in 0...4 {
